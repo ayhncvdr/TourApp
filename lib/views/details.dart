@@ -7,8 +7,8 @@ class Details extends StatefulWidget {
   final String imgUrl;
   final String placeName;
   final double rating;
-  Details(
-      {@required this.rating, @required this.imgUrl, @required this.placeName});
+  final String info;
+  Details({this.rating, this.imgUrl, this.placeName, this.info});
 
   @override
   _DetailsState createState() => _DetailsState();
@@ -184,7 +184,7 @@ class _DetailsState extends State<Details> {
                 margin: EdgeInsets.symmetric(vertical: 24),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [DetailsCard(), DetailsCard()],
+                  children: [DetailsCard(), HotelOut()],
                 ),
               ),
               SizedBox(
@@ -193,7 +193,7 @@ class _DetailsState extends State<Details> {
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 24),
                 child: Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque arcu quis eros auctor, eu dapibus urna congue. Nunc nisi diam, semper maximus risus dignissim, semper maximus nibh. Sed finibus ipsum eu erat finibus efficitur. ",
+                  widget.info,
                   textAlign: TextAlign.start,
                   style: TextStyle(
                       fontSize: 15,
@@ -288,6 +288,79 @@ class DetailsCard extends StatelessWidget {
           ),
           Text(
             " Based on 30 reviews",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+                color: Color(0xff879D95)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class HotelOut extends StatelessWidget {
+  final String title;
+  final String noOfReviews;
+  final double rating;
+  HotelOut({this.rating, this.title, this.noOfReviews});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      decoration: BoxDecoration(
+          color: Color(0xffE9F4F9), borderRadius: BorderRadius.circular(16)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                    color: Color(0xffD5E6F2),
+                    borderRadius: BorderRadius.circular(10)),
+                child: Image.asset(
+                  "assets/card1.png",
+                  height: 30,
+                ),
+              ),
+              SizedBox(
+                width: 8,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "HotelOut",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xff5A6C64)),
+                  ),
+                  SizedBox(
+                    height: 6,
+                  ),
+                  Text(
+                    "4.0/5",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xff5A6C64)),
+                  )
+                ],
+              )
+            ],
+          ),
+          SizedBox(
+            height: 8,
+          ),
+          Text(
+            " Based on 130 reviews",
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 14,

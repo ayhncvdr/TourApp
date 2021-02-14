@@ -4,4 +4,8 @@ class PopularTourModel {
   String desc;
   String price;
   double rating;
+  String info;
+
+  PopularTourModel(
+      {this.imgUrl, this.title, this.desc, this.price, this.info, this.rating});
 }

@@ -6,7 +6,7 @@ List<CountryModel> getCountrys() {
   CountryModel countryModel = new CountryModel();
 
 //1
-  countryModel.countryName = "Thailand";
+  countryModel.countryName = "Malesia";
   countryModel.label = "New";
   countryModel.noOfTours = 18;
   countryModel.rating = 4.5;
@@ -16,7 +16,7 @@ List<CountryModel> getCountrys() {
   countryModel = new CountryModel();
 
   //1
-  countryModel.countryName = "Malaysia";
+  countryModel.countryName = "Turkey";
   countryModel.label = "Sale";
   countryModel.noOfTours = 12;
   countryModel.rating = 4.3;
@@ -26,7 +26,7 @@ List<CountryModel> getCountrys() {
   countryModel = new CountryModel();
 
   //1
-  countryModel.countryName = "Thailand";
+  countryModel.countryName = "USA";
   countryModel.label = "New";
   countryModel.noOfTours = 18;
   countryModel.rating = 4.5;
@@ -36,9 +36,9 @@ List<CountryModel> getCountrys() {
   countryModel = new CountryModel();
 
   //1
-  countryModel.countryName = "Thailand";
+  countryModel.countryName = "UK";
   countryModel.label = "New";
-  countryModel.noOfTours = 18;
+  countryModel.noOfTours = 48;
   countryModel.rating = 4.5;
   countryModel.imgUrl =
       "https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
@@ -46,9 +46,9 @@ List<CountryModel> getCountrys() {
   countryModel = new CountryModel();
 
   //1
-  countryModel.countryName = "Thailand";
+  countryModel.countryName = "Gamze";
   countryModel.label = "New";
-  countryModel.noOfTours = 18;
+  countryModel.noOfTours = 89;
   countryModel.rating = 4.5;
   countryModel.imgUrl =
       "https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
@@ -56,20 +56,20 @@ List<CountryModel> getCountrys() {
   countryModel = new CountryModel();
 
   //1
-  countryModel.countryName = "Thailand";
+  countryModel.countryName = "Gamze";
   countryModel.label = "New";
-  countryModel.noOfTours = 18;
-  countryModel.rating = 4.5;
+  countryModel.noOfTours = 6;
+  countryModel.rating = 3.5;
   countryModel.imgUrl =
       "https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
   country.add(countryModel);
   countryModel = new CountryModel();
 
   //1
-  countryModel.countryName = "Thailand";
+  countryModel.countryName = "Gamze";
   countryModel.label = "New";
-  countryModel.noOfTours = 18;
-  countryModel.rating = 4.5;
+  countryModel.noOfTours = 12;
+  countryModel.rating = 4.0;
   countryModel.imgUrl =
       "https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
   country.add(countryModel);
@@ -85,10 +85,11 @@ List<PopularTourModel> getPopularTours() {
 //1
   popularTourModel.imgUrl =
       "https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
-  popularTourModel.title = "Thailand";
+  popularTourModel.title = "Tailand";
   popularTourModel.desc = "10 nights for two/all inclusive";
   popularTourModel.price = "\$ 245.50";
   popularTourModel.rating = 4.0;
+  popularTourModel.info = "Buraları kendin yaz";
   popularTourModels.add(popularTourModel);
   popularTourModel = new PopularTourModel();
 
@@ -99,6 +100,7 @@ List<PopularTourModel> getPopularTours() {
   popularTourModel.desc = "10 nights for two/all inclusive";
   popularTourModel.price = "\$ 499.99";
   popularTourModel.rating = 4.5;
+  popularTourModel.info = "Buraları kendin yaz";
   popularTourModels.add(popularTourModel);
   popularTourModel = new PopularTourModel();
 
@@ -109,6 +111,7 @@ List<PopularTourModel> getPopularTours() {
   popularTourModel.desc = "10 nights for two/all inclusive";
   popularTourModel.price = "\$ 245.50";
   popularTourModel.rating = 4.2;
+  popularTourModel.info = "Buraları kendin yaz";
   popularTourModels.add(popularTourModel);
   popularTourModel = new PopularTourModel();
 
@@ -119,6 +122,7 @@ List<PopularTourModel> getPopularTours() {
   popularTourModel.desc = "10 nights for two/all inclusive";
   popularTourModel.price = "\$ 245.50";
   popularTourModel.rating = 4.0;
+  popularTourModel.info = "Buraları kendin yaz";
   popularTourModels.add(popularTourModel);
   popularTourModel = new PopularTourModel();
 
@@ -129,6 +133,7 @@ List<PopularTourModel> getPopularTours() {
   popularTourModel.desc = "10 nights for two/all inclusive";
   popularTourModel.price = "\$ 245.50";
   popularTourModel.rating = 4.0;
+  popularTourModel.info = "Buraları kendin yaz";
   popularTourModels.add(popularTourModel);
   popularTourModel = new PopularTourModel();
 
@@ -139,6 +144,19 @@ List<PopularTourModel> getPopularTours() {
   popularTourModel.desc = "10 nights for two/all inclusive";
   popularTourModel.price = "\$ 245.50";
   popularTourModel.rating = 4.0;
+  popularTourModel.info = "Buraları kendin yaz";
+  popularTourModels.add(popularTourModel);
+
+  popularTourModel = new PopularTourModel();
+
+//1
+  popularTourModel.imgUrl =
+      "https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+  popularTourModel.title = "Thailand";
+  popularTourModel.desc = "10 nights for two/all inclusive";
+  popularTourModel.price = "\$ 245.50";
+  popularTourModel.rating = 4.0;
+  popularTourModel.info = "Buraları kendin yaz";
   popularTourModels.add(popularTourModel);
   popularTourModel = new PopularTourModel();
 
@@ -149,16 +167,7 @@ List<PopularTourModel> getPopularTours() {
   popularTourModel.desc = "10 nights for two/all inclusive";
   popularTourModel.price = "\$ 245.50";
   popularTourModel.rating = 4.0;
-  popularTourModels.add(popularTourModel);
-  popularTourModel = new PopularTourModel();
-
-//1
-  popularTourModel.imgUrl =
-      "https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
-  popularTourModel.title = "Thailand";
-  popularTourModel.desc = "10 nights for two/all inclusive";
-  popularTourModel.price = "\$ 245.50";
-  popularTourModel.rating = 4.0;
+  popularTourModel.info = "Buraları kendin yaz";
   popularTourModels.add(popularTourModel);
   popularTourModel = new PopularTourModel();
 
